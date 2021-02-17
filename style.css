@@ -1,3 +1,12 @@
+@font-face{
+    font-family: 'Air Factory Rounded';
+    src: url('/AirFactoryRounded.ttf') format('ttf');
+}
+@font-face{
+    font-family: 'FranKleinBold';
+    src: url('/834bd87329594b0538dbe2615b13a6b7.woff') format('woff');
+}
+/*url("834bd87329594b0538dbe2615b13a6b7.woff") format("woff"),*/
 * {
 	box-sizing: border-box;
 }
@@ -14,7 +23,7 @@ main{
     padding: 2%;
 }
 h1{
-    font-family: 'Air Factory Rounded',serif;
+    font-family: FranKleinBold, 'Air Factory Rounded', 'Alte Haas Grotesk Bold',serif;
     font-weight: normal;
 }
 /*div{
