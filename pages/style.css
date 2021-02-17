@@ -1,0 +1,108 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right bottom, #8bb2ee, #898ed0);
+    height: 120vh;
+    width: 100vw; /* #8bb2ee;*/
+}
+
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Air Factory Rounded', 'Alte Haas Grotesk Bold',serif;
+    font-weight: normal;    
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    margin:auto;
+    padding-top: 6%;
+    display: flex;
+}
+
+.container-left{
+    background-color: #fff;
+    width: 50%;
+    margin: 0%;
+    padding-left: 1.5%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+    box-shadow: -4px 4px 4px #7a7a7a;
+}
+
+.container-right{
+    background-color: #4935d4;
+    width: 50%;
+    margin: 0%;
+    padding-left: 1.5%;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    box-shadow: 2px 4px 4px #7a7a7a;
+}
+
+.container-left h1{
+    color: #2a67b7;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    margin-left: 5%;
+}
+
+.container-right h1{
+    color: #fff;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    margin-left: 5%;
+}
+
+select, input{
+    border-style: none;
+    border-bottom: 1px solid;
+}
+
+.container-left input, .container-left select{
+    border-bottom: 1px solid #7a7a7a;
+    background-color: #fff;
+    font-weight: bolder;
+    color: #7a7a7a;
+}
+
+.container-right input, .container-right select{
+    border-bottom: 1px solid #d8b1ff;
+    background-color: #4935d4;
+    font-weight: bolder;
+    color: #fff;
+}
+
+button{
+    border-radius: 20px;
+	border: 1px solid #FFF;
+	background-color: #FFF;
+	color: #707070;
+	font-size: medium;
+	font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+
+.contrat{
+    width: 65%;
+    color: #fff;
+    text-align: left;
+    font-size: 95%;
+    display: flex;
+}
+
+.check{
+    margin-right: 2%;
+}
+
+.terms{
+    font-weight: bold;
+    color: #fff;
+}
+
+.floating_label>label{
+    opacity: 0;
+}
+
+:placeholder-shown{
+    font-weight: bolder;
+}

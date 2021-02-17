@@ -4,92 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrivez-vous - TP3 HTML & CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages/style.css">
+    <title>Apply to Our Network - Travail sur le HTML & le CSS</title>
 </head>
 <body>
-    <main id="corps">
-        <section id="general_information" class="form_container">
-            <h1 class="titre1">General Information</h1>
-            <form action="post">
-                <div class="floating_label">
-                    <select name="user_title" id="user_title">
-                        <option value="0">&thinsp;</option>
-                    </select>
-                    <label for="user_title">Title</label>
-                </div><br>
-                <div class="floating_label">
-                    <input type="text" name="user_first" id="user_first" placeholder="First Name">
-                    <label for="user_first">First Name</label>
-                    <input type="text" name="user_last" id="user_last" placeholder="Last Name">
-                    <label for="user_last">Last Name</label>
-                </div><br>
-                <div class="floating_label">
-                    <select name="user_position" id="user_position">
-                        <option value="0">&thinsp;</option>
-                    </select>
-                    <label for="user_position">Position</label>
-                </div><br>
-                <div class="floating_label">
-                    <input type="text" name="user_company" id="user_company" placeholder="Company">
-                    <label for="user_company">Company</label>
-                </div><br>
-                <div class="floating_label">
-                    <input type="text" name="user_business" id="user_business" placeholder="Business Arena">
-                    <label for="user_business">Business Arena</label>
-                    <select name="user_employee" id="user_employee">
-                        <option value="0">&thinsp;</option>
-                    </select>
-                    <label for="user_employee">Employee</label>
-                </div>
-            </form>
-        </section>
-        <section id="contact_details" class="form_container">
-            <h1 class="titre1">Contact Details</h1>
-            <form action="post">
-                <div class="floating_label">
-                    <input type="text" name="user_street" id="user_street" placeholder="Street + Nr">
-                    <label for="user_street">Street + Nr</label>
-                </div><br>
-                <div class="floating_label">
-                    <input type="text" name="user_addinfo" id="user_addinfo" placeholder="Additional Information">
-                    <label for="user_addinfo">Additional Information</label>
-                </div><br>
-                <div class="floating_label">
-                    <input type="text" name="user_zipcode" id="user_zipcode" placeholder="Zip Code">
-                    <label for="user_zipcode">Zip Code</label>
-                </div>
-                <div class="floating_label">
-                    <select name="user_place" id="user_place">
-                        <option value="0">&thinsp;</option>
-                    </select>
-                    <label for="user_place">Place</label>
-                </div><br>
-                <div class="floating_label">
-                    <select name="user_country" id="user_country" placeholder="Country">
-                        <option value="0">&thinsp;</option>
-                    </select>
-                    <label for="user_country">Country</label>
-                </div><br>
-                <div class="floating_label">
-                    <input type="tel" name="user_numcode" id="user_numcode" placeholder="Code +">
-                    <label for="user_numcode">Code +</label>
-                </div>
-                <div class="floating_label">
-                    <input type="tel" name="user_numtel" id="user_numtel" placeholder="Phone Number">
-                    <label for="user_numtel">Phone Number</label>
-                </div><br>
-                <div class="floating_label">
-                    <input type="email" name="user_mail" id="user_mail" placeholder="Your Email">
-                    <label for="user_mail">Your Email</label>
-                </div><br>
-                <div class="validating">
-                    <input type="checkbox" name="valid" id="valid" checked>
-                    <label for="valid">I do accept the <a href="#">Terms and Conditions</a> of your site</label>
-                </div>
-                <button type="submit">Register Badge</button>
-            </form>
-        </section>
-    </main>
+  <!--conteneur global pour "general information" et "contact details"-->
+  <main class="container">
+    <!--general information conteneur-->
+    <section class="container-left">
+      <h1 class="title-left">General Information</h1>
+      <div class="container-form">
+        <form action="#" method="post">
+          <p class="floating_label">
+              <select name="user_title" id="user_title">
+                  <option value="0">Title</option>
+              </select>
+              <label for="user_title">Title</label>
+          </p><br>
+          <p class="floating_label">
+              <input type="text" name="user_first" id="user_first" placeholder="First Name">
+              <label for="user_first">First Name</label>
+              <input type="text" name="user_last" id="user_last" placeholder="Last Name">
+              <label for="user_last">Last Name</label>
+          </p><br>
+          <p class="floating_label">
+              <select name="user_position" id="user_position">
+                  <option value="0">Position</option>
+              </select>
+              <label for="user_position">Position</label>
+          </p><br>
+          <p class="floating_label">
+              <input type="text" name="user_company" id="user_company" placeholder="Company">
+              <label for="user_company">Company</label>
+          </p><br>
+          <p class="floating_label">
+              <input type="text" name="user_business" id="user_business" placeholder="Business Arena">
+              <label for="user_business">Business Arena</label>
+              <select name="user_employee" id="user_employee">
+                  <option value="0">Employee</option>
+              </select>
+              <label for="user_employee">Employee</label>
+          </p>          
+        </form>
+      </div>
+    </section>  
+    <!--contact detail conteneur-->
+    <section class="container-right">
+      <h1 class="title-right">Contact Details</h1>
+      <div class="container-form">
+        <form action="#" method="post">
+          <p class="floating_label">
+              <input type="text" name="user_street" id="user_street" placeholder="Street + Nr">
+              <label for="user_street">Street + Nr</label>
+          </p><br>
+          <p class="floating_label">
+              <input type="text" name="user_addinfo" id="user_addinfo" placeholder="Additional Information">
+              <label for="user_addinfo">Additional Information</label>
+          </p><br>
+          <p class="floating_label">
+              <input type="text" name="user_zipcode" id="user_zipcode" placeholder="Zip Code">
+              <label for="user_zipcode">Zip Code</label>
+              <select name="user_place" id="user_place">
+                  <option value="0">Place</option>
+              </select>
+              <label for="user_place">Place</label>
+          </p><br>
+          <p class="floating_label">
+              <select name="user_country" id="user_country">
+                  <option value="0">Country</option>
+              </select>
+              <label for="user_country">Country</label>
+          </p><br>
+          <p class="floating_label">
+              <input type="tel" name="user_numcode" id="user_numcode" placeholder="Code +">
+              <label for="user_numcode">Code +</label>
+              <input type="tel" name="user_numtel" id="user_numtel" placeholder="Phone Number">
+              <label for="user_numtel">Phone Number</label>
+          </p><br>
+          <p class="floating_label">
+              <input type="email" name="user_mail" id="user_mail" placeholder="Your Email">
+              <label for="user_mail">Your Email</label>
+          </p><br>
+          <div class="contrat">
+              <div class="check"><input type="checkbox" name="valid" id="valid" checked></div>
+              <label for="valid">I do accept the <a href="#" class="terms">Terms and Conditions</a> of your site</label>
+          </div>
+          <button type="submit">Register Badge</button>
+        </form>
+      </div>
+    </section>  
+  </main>
 </body>
 </html>
