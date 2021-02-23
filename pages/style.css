@@ -1,108 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
     background: linear-gradient(to right bottom, #8bb2ee, #898ed0);
-    height: 120vh;
-    width: 100vw; /* #8bb2ee;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-h1{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Air Factory Rounded', 'Alte Haas Grotesk Bold',serif;
-    font-weight: normal;    
-}
-
 .container{
-    width: 80%;
-    height: 80%;
-    margin:auto;
-    padding-top: 6%;
+    border: 0px solid navy;
+    width: 100%;
+    height: 100%;
+}
+form{
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 0px solid black;
 }
-
 .container-left{
+    border: 0px solid green;
+    border-top-left-radius:2% ;
+    border-bottom-left-radius:2% ;
+    box-shadow: -3px 2px 4px #5f5f5f;
+    width: 45%;
+    height: 85%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
     background-color: #fff;
-    width: 50%;
-    margin: 0%;
-    padding-left: 1.5%;
-    border-top-left-radius: 2%;
-    border-bottom-left-radius: 2%;
-    box-shadow: -4px 4px 4px #7a7a7a;
 }
-
 .container-right{
-    background-color: #4935d4;
-    width: 50%;
-    margin: 0%;
-    padding-left: 1.5%;
+    border: 0px solid greenyellow;
     border-top-right-radius: 2%;
     border-bottom-right-radius: 2%;
-    box-shadow: 2px 4px 4px #7a7a7a;
+    box-shadow: 2px 3px 4px #5f5f5f;
+    width: 45%;
+    height: 85%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4935d4;
 }
 
-.container-left h1{
+.floating_label{
+    border: 0px solid red;
+    margin: 0.5%;
+}
+.floating_label>label{
+    opacity: 0;
+}
+h1{
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title-left{
+    margin-top: -20%;
     color: #2a67b7;
-    padding-top: 5%;
-    padding-bottom: 1%;
-    margin-left: 5%;
 }
-
-.container-right h1{
+.title-right{
     color: #fff;
-    padding-top: 5%;
-    padding-bottom: 1%;
-    margin-left: 5%;
 }
-
-select, input{
+input, select{
     border-style: none;
     border-bottom: 1px solid;
+    font-weight: bolder;
+    outline: none;
 }
 
+input::placeholder, select::placeholder{
+    opacity: 1;
+}
+.container-right input, .container-right select{
+    background-color: #4935d4;
+    border-color:#d8b1ff;
+    color:#fff; 
+}
 .container-left input, .container-left select{
-    border-bottom: 1px solid #7a7a7a;
     background-color: #fff;
-    font-weight: bolder;
+    border-color: #7a7a7a;
     color: #7a7a7a;
 }
-
-.container-right input, .container-right select{
-    border-bottom: 1px solid #d8b1ff;
-    background-color: #4935d4;
-    font-weight: bolder;
+.container-right input::placeholder{
     color: #fff;
 }
-
-button{
-    border-radius: 20px;
-	border: 1px solid #FFF;
-	background-color: #FFF;
-	color: #707070;
-	font-size: medium;
-	font-weight: bold;
-    padding: 10px 20px;
-    margin-top: 5px;
+input[type='text']{
+    margin: 1px;
 }
 
+#user_title{
+    width: 99%;
+}
+
+#first{
+    width: 100%;
+}
+
+#user_first{
+    width: 46%;
+    margin-right: 35%;
+}
+
+#user_last{
+    width: 49%;
+    margin-left: -50%;
+}
+#user_position{
+    width: 99%;
+}
+#user_company{
+    width: 99%;
+}
+#business{
+    width: 100%;
+}
+#user_business{
+    width: 46%;
+}
+#user_employee{
+    width: 49%;
+    margin-left: -22%;
+}
+#user_street{
+    width: 99%;
+}
+#user_addinfo{
+    width: 99%;
+}
+#zip{
+    width: 100%;
+}
+#user_zipcode{
+    width: 18%;
+}
+#user_place{
+    width: 76%;
+    margin-left: -12%;
+}
+#user_country{
+    width: 99%;
+}
+#user_mail{
+    width: 99%;
+}
+#tel{
+    width: 100%;
+}
+#user_numcode{
+    width: 18%;
+}
+#user_numtel{
+    width: 77%;
+    margin-left: -10%;
+}
 .contrat{
-    width: 65%;
+    width: 85%;
+    margin-bottom: 4%;
     color: #fff;
     text-align: left;
     font-size: 95%;
     display: flex;
 }
-
-.check{
-    margin-right: 2%;
-}
-
 .terms{
     font-weight: bold;
     color: #fff;
 }
-
-.floating_label>label{
-    opacity: 0;
+.check{
+    margin-right: 2%;
 }
-
-:placeholder-shown{
-    font-weight: bolder;
+button{
+    border-radius: 25px;
+	border: 0px solid #FFF;
+	background-color: #FFF;
+    width: 30%;
+	color: #707070;
+	font-size: medium;
+	font-weight: bold;
+    padding: 2%;
+    margin-top: 1%;
+    margin-left: 1%;
 }
