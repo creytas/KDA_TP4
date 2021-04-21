@@ -77,7 +77,7 @@ input, select{
 }
 
 input::placeholder, select::placeholder{
-    opacity: 0.8;
+    opacity: 0.7;
 }
 .container-right input, .container-right select{
     background-color: #4935d4;
